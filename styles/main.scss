@@ -1,0 +1,75 @@
+@import './shared/colors';
+@import './shared/mixins';
+
+// PAGES
+@import './index';
+@import './portfolios';
+@import './blogs';
+@import './about';
+@import './cv';
+
+// COMPONENTS
+@import './header';
+@import './slate-editor';
+
+html, body {
+  height: 100%;
+  width: 100%;
+  font-family: 'Montserrat', 'Helvetica';
+}
+
+.clickable {
+  cursor: pointer;
+}
+
+.self-typed {
+  font-size: 31px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  color: white;
+}
+
+.absolute {
+  position: absolute;
+}
+
+.error {
+  font-weight: 700;
+  color: red;
+}
+
+.base-page {
+  padding: 150px 0 100px 0;
+  color: black;
+  background-color: #f5f5f5;
+  min-height: 100vh;
+
+  .page-header {
+    .page-header-title {
+      font-weight: 700;
+      color: $gray-100;
+      display: inline-block;
+      margin-bottom: 20px;
+    }
+  }
+}
+
+.about-page , .portfolio-page , .blog-editor-page, .cv-page {
+
+  background-color: #292929 !important;
+}
+
+
+.port-dropdown-item{
+  color:#292929 !important;
+}
+.clickable{
+  cursor: pointer;
+}
+
+.article-title {
+  font-size: 1.9rem;
+  border-left: 5px solid #02a2ff;
+  padding-left: 10px;
+  font-weight: 700;
+}
