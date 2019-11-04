@@ -4,7 +4,7 @@ import BasePage from "../components/BasePage";
  
 import { Col, Row, Button } from "reactstrap";
  
-import portfolioConfig from "../server/config/dev";
+import portfolioConfig from "../server/config/index";
  
 
 import moment from "moment";
