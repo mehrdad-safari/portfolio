@@ -10,7 +10,7 @@ const routes = require('../routes');
 const dev = process.env.NODE_ENV !== 'production';
 const app = next({ dev });
 const handle = routes.getRequestHandler(app);
-const config = require('./config/dev');
+const config = require('./config');
 
  
 const bodyParser = require('body-parser');
