@@ -18,7 +18,7 @@ export default role => Component =>
       const userRole = user && user[`${process.env.NAMESPACE}/role`];
       
       let isAuthorized = false;
-
+console.log(user);
       if (role) {
         if (user && userRole && userRole[0] === role) {
           isAuthorized = true;

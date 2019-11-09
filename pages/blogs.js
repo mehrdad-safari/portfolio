@@ -39,9 +39,14 @@ class Blogs extends React.Component {
           <Link route={`/blogs/${blog.slug}`}>
           <h3 className="card-title clickable"> {blog.title} </h3>
           </Link>
-          <p className="card-description">
-          {shortenText(blog.subTitle)}
-          </p>
+           
+          
+          <p
+            className="card-description"
+            dangerouslySetInnerHTML={{ __html: shortenText(blog.story) }}
+           />
+      
+       
         </div>
         <div className="card-footer">
           <div className="post-author">
